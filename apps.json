@@ -55,16 +55,6 @@
         "location": "https://play.geforcenow.com"
     },
     {
-        "title": "Xbox",
-        "img": "./img/apps/xbox.png",
-        "location": "https://www.xbox.com/play"
-    },
-    {
-        "title": "Crazy Games",
-        "img": "./img/apps/cg.png",
-        "location": "https://www.crazygames.com"
-    },
-    {
         "title": "Y8",
         "img": "./img/apps/y8.png",
         "location": "https://www.y8.com"
