@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="./uv/uv.bundle.js"></script>
-    <script src="./uv/uv.config.js"></script>
-    <style>
+<script src="./uv/uv.bundle.js"></script>
+<script src="./uv/uv.config.js"></script>
+<style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap');
         body {
             background: #111;
@@ -54,18 +55,16 @@
         }
         }
     </style>
-</head> 
+</head>
 <body>
-
-    <div class="msg">
-        <div class="lds-dual-ring"></div>
-        <p class="info">
-            Please wait a moment. 
-            Our service maybe under high load causing some slowness on our servers. Your request will eventually be responded to.
-        </p>
-    </div>
-
-    <script>
+<div class="msg">
+<div class="lds-dual-ring"></div>
+<p class="info">
+Please wait a moment.
+Our service maybe under high load causing some slowness on our servers. Your request will eventually be responded to.
+</p>
+</div>
+<script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('./uv.sw-handler.js', {
                 scope: '/'
