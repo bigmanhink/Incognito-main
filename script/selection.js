@@ -1,5 +1,4 @@
 import EventEmitter from "./events.js";
-
 class Selection extends EventEmitter {
     constructor(app) {
         super();
@@ -19,11 +18,7 @@ class Selection extends EventEmitter {
     };
     createSelector(id, element) {
         this.selectors[id] = element;
-
-        element.addEventListener('click', () =>
-            this.switchSelector(id)
-        );
-
+        element.addEventListener('click', () => this.switchSelector(id));
         this.element.append(element);
         return element;
     };
@@ -36,5 +31,4 @@ class Selection extends EventEmitter {
         return true;
     };
 };
-
 export { Selection };
