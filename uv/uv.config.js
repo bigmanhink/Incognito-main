@@ -1,20 +1,12 @@
-self.__uv$config = {
-    port: 8080,
-    ssl: false,
+const split=location.hostname.split('.')
+const domain=split.slice(0).slice(-(split.length===4?3:2)).join('.')
+self.__uv$config={
     prefix: '/service/',
-    codec: "xor",
-    bare: 'https://incog.dev/bare/',
-    proxy: true,
-    authorization: {
-        "name": "__incog_auth",
-        "value": "1"
-    },
+    bare: 'https://client.incog.dev',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
-    handler: '/uv.handler.js',
-    bundle: '/uv.bundle.js',
-    config: '/uv.config.js',
-    sw: '/uv.sw.js',
-    appearance: "bright",
-    engine: "google"
+    handler: '/uv/uv.handler.js',
+    bundle: '/uv/uv.bundle.js',
+    config: '/uv/uv.config.js',
+    sw: '/uv/uv.sw.js',
 };
