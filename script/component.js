@@ -5,21 +5,17 @@ function createComponent(element) {
             if (prop === 'text') return element.textContent;
             if (prop === 'style') return element.style;
             if (prop === 'clear') return clear;
-
             return target[prop];
         },
         set: (target, prop, val) => {
-            if (prop === 'text') return (element.textContent = val, true);            
+            if (prop === 'text') return (element.textContent = val, true);
             if (typeof val === 'string') val = document.createElement(val);
-
             if (prop in target) {
                 target[prop].remove();
                 delete target[prop];
             };
-
             element.append(val);
             target[prop] = val
-
             return true;
         },
         deleteProperty: (target, prop) => {
@@ -35,5 +31,6 @@ function createComponent(element) {
         };
     };
 };
-
-export { createComponent }; 
+export {
+    createComponent
+};
