@@ -30,5 +30,4 @@ class Tabs extends EventEmitter {
         return true;
     };
 };
-
 export { Tabs };
