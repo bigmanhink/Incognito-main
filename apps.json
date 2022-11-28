@@ -42,7 +42,7 @@
     {
         "title": "Retro Arch",
         "img": "./img/apps/retroarch.png",
-        "location": "./source/retroarch/"
+        "location": "https://incog.dev/source/retroarch/"
     },
     {
         "title": "CoolMathGames",
