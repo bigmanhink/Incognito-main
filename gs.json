@@ -324,7 +324,7 @@
     },
     {
       "img": "./img/gs/smb.jpg",
-      "location": "./source/webretro/?core=autodetect&rom=smb.nes",
+      "location": "./source/webretro/?core=autodetect&rom=2048.nes",
       "title": "Super Mario Bros",
       "category": "nes"
     },
